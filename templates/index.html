@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Chatbot</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <button id="new-chat-btn">+ New chat</button>
+      <ul id="conversation-list"></ul>
+    </aside>
+    <main class="chat-area">
+      <div class="chat-header">
+        <select id="model-select">
+          <option value="claude-haiku-4-5">Haiku 4.5</option>
+          <option value="claude-sonnet-5">Sonnet 5</option>
+        </select>
+      </div>
+      <div id="messages" class="messages"></div>
+      <form id="chat-form" class="chat-form">
+        <input id="chat-input" type="text" placeholder="Nhập tin nhắn..." autocomplete="off" />
+        <button type="submit">Gửi</button>
+      </form>
+    </main>
+  </div>
+  <script src="/static/chat.js"></script>
+</body>
+</html>
